@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS untuk membuat semua link di halaman memiliki smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.dropdown-item:hover {
+    color: dodgerblue;
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+
+.wrapper {
+    background-image: url('../assets/hero-bg.png');
+    background-size: cover; 
+    background-position: right center; 
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 0 20px; 
+}
+
+#products {
+    background-color: rgb(219, 238, 255);
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Warna hitam dengan transparansi 60% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: white;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 576px) {
+    .about-text {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .about-text {
+        font-size: 20px;
+    }
+}
